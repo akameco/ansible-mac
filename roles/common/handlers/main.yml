@@ -1,0 +1,8 @@
+---
+- name: run fc-cache
+  shell: fc-cache -vf
+
+- name: rbenv rehash
+  shell: >
+    eval "$(rbenv init -)";
+    rbenv rehash

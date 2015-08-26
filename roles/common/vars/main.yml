@@ -1,0 +1,90 @@
+---
+homebrew_taps:
+  - homebrew/binary
+  - homebrew/dupes
+  - caskroom/cask
+  - sanemat/font
+  - caskroom/versions
+  - tcnksm/ghr
+
+homebrew_packages:
+  - readline
+  - openssl
+  - python
+  - ansible
+  - coreutils
+  - heroku-toolbelt
+  - git
+  - { name: zsh, install_options: disable-etcdir }
+  - wget
+  - curl
+  - ctags
+  - tree
+  - go
+  - lua
+  - cscope
+  - { name: macvim, state: head, install_options: with-lua, with-cscope, override-systems }
+  - direnv
+  - peco
+  - hub
+  - tig
+  - rbenv
+  - ruby-build
+  - imagemagick
+  - tmux
+  - phantomjs
+  - gibo
+  - node
+  - thefuck
+  - graphviz
+  - postgresql
+  - redis
+  - terminal-notifier
+  - libsass
+  - jq
+  - ghr
+  - fontforge
+  - { name: vim, install_options: with-lua }
+  - { name: ricty, install_options: vim-powerline }
+
+homebrew_cask_packages:
+  - iterm2
+  - firefox-ja
+  - google-chrome
+  - google-japanese-ime
+  - flash
+  - adobe-reader
+  - java
+  - skype
+  - slack
+  - dash
+  - kobito
+  - webstorm
+  - rubymine
+  - intellij-idea
+  - virtualbox
+  - vagrant
+  - dropbox
+  - karabiner
+  - alfred
+  - vlc
+  - android-file-transfer
+  - android-studio
+  - gyazo
+  - skitch
+  - hyperswitch
+  - bettertouchtool
+  - evernote
+  - eclipse-jee
+  - processing
+  - gimp
+  - arduino
+  - unity
+  - xamarin-studio 
+  - xquartz
+
+rbenv_ruby_version: 2.2.3
+
+rbenv_global_gems:
+  - bundler
+  - pry
