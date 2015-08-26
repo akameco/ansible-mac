@@ -1,85 +1,85 @@
 ---
 homebrew_taps:
+  - caskroom/cask
+  - caskroom/versions
   - homebrew/binary
   - homebrew/dupes
-  - caskroom/cask
   - sanemat/font
-  - caskroom/versions
   - tcnksm/ghr
 
 homebrew_packages:
-  - readline
-  - openssl
-  - python
   - ansible
   - coreutils
-  - heroku-toolbelt
-  - git
-  - { name: zsh, install_options: disable-etcdir }
-  - wget
-  - curl
-  - ctags
-  - tree
-  - go
-  - lua
   - cscope
-  - { name: macvim, state: head, install_options: with-lua, with-cscope, override-systems }
+  - ctags
+  - curl
   - direnv
-  - peco
-  - hub
-  - tig
-  - rbenv
-  - ruby-build
-  - imagemagick
-  - tmux
-  - phantomjs
-  - gibo
-  - node
-  - thefuck
-  - graphviz
-  - postgresql
-  - redis
-  - terminal-notifier
-  - libsass
-  - jq
-  - ghr
   - fontforge
-  - { name: vim, install_options: with-lua }
+  - ghr
+  - gibo
+  - git
+  - go
+  - graphviz
+  - heroku-toolbelt
+  - hub
+  - imagemagick
+  - jq
+  - libsass
+  - lua
+  - node
+  - openssl
+  - peco
+  - phantomjs
+  - postgresql
+  - python
+  - rbenv
+  - readline
+  - redis
+  - ruby-build
+  - terminal-notifier
+  - thefuck
+  - tig
+  - tmux
+  - tree
+  - wget
+  - { name: macvim, state: head, install_options: with-lua, with-cscope, override-systems }
   - { name: ricty, install_options: vim-powerline }
+  - { name: vim, install_options: with-lua }
+  - { name: zsh, install_options: disable-etcdir }
 
 homebrew_cask_packages:
-  - iterm2
-  - firefox-ja
-  - google-chrome
-  - google-japanese-ime
-  - flash
   - adobe-reader
-  - java
-  - skype
-  - slack
-  - dash
-  - kobito
-  - webstorm
-  - rubymine
-  - intellij-idea
-  - virtualbox
-  - vagrant
-  - dropbox
-  - karabiner
   - alfred
-  - vlc
   - android-file-transfer
   - android-studio
-  - gyazo
-  - skitch
-  - hyperswitch
-  - bettertouchtool
-  - evernote
-  - eclipse-jee
-  - processing
-  - gimp
   - arduino
+  - bettertouchtool
+  - dash
+  - dropbox
+  - eclipse-jee
+  - evernote
+  - firefox-ja
+  - flash
+  - gimp
+  - google-chrome
+  - google-japanese-ime
+  - gyazo
+  - hyperswitch
+  - intellij-idea
+  - iterm2
+  - java
+  - karabiner
+  - kobito
+  - processing
+  - rubymine
+  - skitch
+  - skype
+  - slack
   - unity
+  - vagrant
+  - virtualbox
+  - vlc
+  - webstorm
   - xamarin-studio 
   - xquartz
 
