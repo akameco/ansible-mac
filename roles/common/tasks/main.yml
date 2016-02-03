@@ -25,45 +25,11 @@
     install_options=force
   changed_when: false
 
-- name: homebrew-cask のインストール
-  homebrew: name=brew-cask state=latest
-  tags: cask
-
-- name: cask パッケージをインストール
-  homebrew_cask: >
-    name={{ item.name | default(item) }}
-    state={{ item.state|default('installed') }}
-  with_items: homebrew_cask_packages
-  register: cask_result
-  tags: cask
-
-# oh-my-zsh
-# - name: oh-my-zsh のインストール
-#  shell: curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
-#  args:
-#    creates: ~/.oh-my-zsh/
-#  tags: shell
-
 - name: check zsh
   command: echo $SHELL
   register: shell
   changed_when: false
   tags: shell
-
-# - name: shellをzshへ変更
-  # command: shell -s /bin/zsh
-  # when: shell.stdout.find('/bin/zsh') == -1
-  # tags: shell
-# - name: install prezto
-  # command: git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
-  # args:
-    # creates: ~/.zprezto
-# - name: setup prezto
-  # shell: >-
-    # setopt EXTENDED_GLOB
-    # for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
-    # ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
-    # done
 
 - name: 生成されたフォントファイルをコピー
   shell: cp -f $(brew --cellar ricty)/*/share/fonts/Ricty*.ttf ~/Library/Fonts/
