@@ -1,7 +1,5 @@
 ---
 homebrew_taps:
-  - caskroom/cask
-  - caskroom/versions
   - homebrew/binary
   - homebrew/dupes
   - sanemat/font
@@ -50,41 +48,27 @@ homebrew_packages:
 homebrew_cask_packages:
   - adobe-reader
   - alfred
-  - android-file-transfer
   - android-studio
   - arduino
   - bettertouchtool
-  - dash
   - dropbox
-  - eclipse-jee
   - evernote
   - firefox-ja
   - flash
-  - gimp
   - google-chrome
   - google-japanese-ime
   - gyazo
-  - hyperswitch
-  - intellij-idea
   - iterm2
   - java
   - karabiner
-  - kobito
-  - processing
   - rubymine
   - skitch
-  - skype
   - slack
   - unity
   - vagrant
   - virtualbox
   - vlc
   - webstorm
-  - xamarin-studio 
-  - xquartz
 
-rbenv_ruby_version: 2.2.3
+rbenv_ruby_version: 2.3.0
 
-rbenv_global_gems:
-  - bundler
-  - pry
